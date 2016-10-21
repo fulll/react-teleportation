@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true,
+  },
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+    }
+  },
+  "plugins": ["babel"],
+  "rules": {
+    "semi": ["error", "never"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-underscore-dangle": 0,
+    "import/prefer-default-export": 0,
+  }
+}

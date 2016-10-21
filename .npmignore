@@ -1,0 +1,10 @@
+# dependencies
+node_modules
+
+# source
+src
+
+# misc
+.DS_Store
+.env
+npm-debug.log
