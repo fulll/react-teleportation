@@ -25,3 +25,4 @@ export default class Teleport {
 }
 
 export * from './modal/sample.js'
+export * from './modal/Alert.js'
