@@ -4,7 +4,8 @@
   "description": "Teleport your components outside of the actual context",
   "main": "./dist/react-teleportation.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "eslint src"
   },
   "repository": {
     "url": "git@github.com:xeonys/react-teleportation.git",

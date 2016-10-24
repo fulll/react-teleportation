@@ -56,8 +56,8 @@ export const Alert = ({ title, description, right, left }) => (
     </footer>
   </Modal>
 )
-
 Alert.propTypes = {
+  /* eslint-disable react/no-unused-prop-types */
   title: React.PropTypes.string.isRequired,
   description: React.PropTypes.string.isRequired,
   right: React.PropTypes.shape({
@@ -68,4 +68,5 @@ Alert.propTypes = {
     title: React.PropTypes.string.isRequired,
     action: React.PropTypes.func.isRequired,
   }),
+  /* eslint-enable react/no-unused-prop-types */
 }
