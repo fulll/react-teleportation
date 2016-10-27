@@ -8,8 +8,7 @@ const Modal = styled.div`
   display: table;
   max-width: 400px;
   min-width: 350px;
-  height: 164px;
-  margin: calc(50vh - 82px) auto;
+  margin: 30vh auto;
   background-color: white;
   padding-bottom: 8px;
 `

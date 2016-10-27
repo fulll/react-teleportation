@@ -9,12 +9,17 @@ const style = {
     margin: '20vh auto',
     borderRadius: 3,
     boxSizing: 'border-box',
-    padding: '0 20px',
+    padding: '20px',
+    fontFamily: 'Noto, Roboto, sans-serif',
   },
 }
 
-export const Modal = () => (
+export const Modal = ({ children }) => (
   <div style={style.div}>
-    <h3>This is a modal</h3>
+    {children}
   </div>
 )
+
+Modal.propTypes = {
+  children: React.PropTypes.node,
+}

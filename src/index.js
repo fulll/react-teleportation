@@ -1,20 +1,25 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { defer, uniqueId } from 'lodash'
+import { defer, uniqueId, get } from 'lodash'
 
-const style = {
+const style = clear => ({
   position: 'fixed',
+  top: 0,
+  left: 0,
   width: '100vw',
   height: '100vh',
-  background: 'rgba(0, 0, 0, 0.1)',
+  background: clear ? 'rgba(0, 0, 0, 0)' : 'rgba(0, 0, 0, 0.1)',
   zIndex: 10,
-}
+})
 
 export default class Teleport {
+  constructor(cfg) {
+    this.style = style(get(cfg, 'clear', false))
+  }
 
   i = uniqueId('teleport')
   m = document.body.appendChild(document.createElement('m'))
-  M = () => <x style={style} id={this.i} onClick={this._close}>{this.el}</x>
+  M = () => <x style={this.style} id={this.i} onClick={this._close}>{this.el}</x>
 
   init = (el) => { this.el = el; this._render() }
   clear = () => { defer(ReactDOM.unmountComponentAtNode, this.m) }
@@ -24,5 +29,5 @@ export default class Teleport {
 
 }
 
-export * from './modal/sample.js'
-export * from './modal/Alert.js'
+export * from './components/Modal.js'
+export * from './components/Alert.js'
