@@ -1,5 +1,5 @@
 import React from 'react'
-import Teleport, { Modal, Alert } from '../src'
+import Teleport, { Modal, Alert, Lightbox } from '../src'
 
 const teleport = new Teleport()
 
@@ -19,6 +19,7 @@ const alertProps = {
 const Home = () => {
   const openModal = () => teleport.init(<Modal>Some text</Modal>)
   const openAlert = () => teleport.init(<Alert {...alertProps} />)
+  const openLightbox = () => teleport.init(<Lightbox url="img/1.jpg" />)
 
   const li = { cursor: 'pointer' }
 
@@ -28,6 +29,7 @@ const Home = () => {
       <ul>
         <li onClick={openModal} style={li}>Open Modal</li>
         <li onClick={openAlert} style={li}>Open Alert</li>
+        <li onClick={openLightbox} style={li}>Open Lightbox</li>
       </ul>
     </div>
 

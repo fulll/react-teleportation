@@ -1,6 +1,7 @@
 import React from 'react'
 import { capitalize as c } from 'lodash'
 import styled from 'styled-components'
+import { Background } from './Commons'
 
 const fontFamily = 'Noto, Roboto, sans-serif'
 
@@ -8,10 +9,11 @@ const Modal = styled.div`
   display: table;
   max-width: 400px;
   min-width: 350px;
-  margin: 30vh auto;
+  margin: 25vh auto;
   background-color: white;
   padding-bottom: 8px;
 `
+
 const H1 = styled.h1`
   font-size: 20px;
   font-weight: 600;
@@ -40,21 +42,25 @@ const Button = styled.button`
   text-transform: uppercase;
   outline: none;
   border: none;
+  user-select: none;
   &:hover {
     background-color: #eee;
   }
 `
 
 export const Alert = ({ title, description, right, left }) => (
-  <Modal>
-    <H1>{c(title)}</H1>
-    <P>{c(description)}</P>
-    <footer style={{ padding: 8 }}>
-      <Button onClick={right.action}>{right.title}</Button>
-      <Button onClick={left.action}>{left.title}</Button>
-    </footer>
-  </Modal>
+  <Background opacity={0.1}>
+    <Modal>
+      <H1>{c(title)}</H1>
+      <P>{c(description)}</P>
+      <footer style={{ padding: 8 }}>
+        <Button onClick={right.action}>{right.title}</Button>
+        <Button onClick={left.action}>{left.title}</Button>
+      </footer>
+    </Modal>
+  </Background>
 )
+
 Alert.propTypes = {
   title: React.PropTypes.string.isRequired,
   description: React.PropTypes.string.isRequired,
