@@ -12,6 +12,10 @@ const Modal = styled.div`
   margin: 25vh auto;
   background-color: white;
   padding-bottom: 8px;
+  box-shadow:  0 5px 20px rgba(0,0,0,0.1);
+  &:hover {
+    box-shadow:  0 5px 20px rgba(0,0,0,0.15);
+  }
 `
 
 const H1 = styled.h1`

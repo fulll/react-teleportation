@@ -9,6 +9,6 @@ export const Background = styled.div`
 export const Img = styled.img`
   position: absolute;
   left: 20%;
-  top: 10%;
+  top: 15%;
   width: 60%;
 `

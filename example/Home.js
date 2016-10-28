@@ -32,7 +32,6 @@ const Home = () => {
         <li onClick={openLightbox} style={li}>Open Lightbox</li>
       </ul>
     </div>
-
   )
 }
 
