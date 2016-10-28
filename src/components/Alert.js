@@ -1,5 +1,5 @@
 import React from 'react'
-import { capitalize } from 'lodash'
+import { capitalize as c } from 'lodash'
 import styled from 'styled-components'
 
 const fontFamily = 'Noto, Roboto, sans-serif'
@@ -47,11 +47,11 @@ const Button = styled.button`
 
 export const Alert = ({ title, description, right, left }) => (
   <Modal>
-    <H1>{capitalize(title)}</H1>
-    <P>{capitalize(description)}</P>
+    <H1>{c(title)}</H1>
+    <P>{c(description)}</P>
     <footer style={{ padding: 8 }}>
-      <Button onClick={left.action}>{left.title}</Button>
       <Button onClick={right.action}>{right.title}</Button>
+      <Button onClick={left.action}>{left.title}</Button>
     </footer>
   </Modal>
 )

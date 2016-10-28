@@ -5,13 +5,13 @@ const teleport = new Teleport()
 
 const alertProps = {
   title: 'Hi',
-  description: 'Some text',
+  description: 'Some test',
   right: {
-    title: 'OK',
+    title: 'cancel',
     action: () => teleport.clear(),
   },
   left: {
-    title: 'Cancel',
+    title: 'ok',
     action: () => teleport.clear(),
   },
 }
