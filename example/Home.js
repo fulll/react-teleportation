@@ -1,25 +1,23 @@
 import React from 'react'
 import Teleport, { Modal, Alert, Lightbox } from '../src'
 
-const teleport = new Teleport()
-
 const alertProps = {
   title: 'Hi',
   description: 'Some text',
   right: {
     title: 'ok',
-    action: () => teleport.clear(),
+    action: () => Teleport.clear(),
   },
   left: {
     title: 'cancel',
-    action: () => teleport.clear(),
+    action: () => Teleport.clear(),
   },
 }
 
 const Home = () => {
-  const openModal = () => teleport.init(<Modal>Some text</Modal>)
-  const openAlert = () => teleport.init(<Alert {...alertProps} />)
-  const openLightbox = () => teleport.init(<Lightbox url="img/1.jpg" />)
+  const openModal = () => Teleport.init(<Modal>Some text</Modal>)
+  const openAlert = () => Teleport.init(<Alert {...alertProps} />)
+  const openLightbox = () => Teleport.init(<Lightbox url="img/1.jpg" />)
 
   const li = { cursor: 'pointer' }
 

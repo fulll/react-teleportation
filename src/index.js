@@ -11,7 +11,7 @@ const style = {
   zIndex: 10,
 }
 
-export default class Teleport {
+class Teleport {
 
   i = uniqueId('teleport')
   m = document.body.appendChild(document.createElement('m'))
@@ -22,6 +22,8 @@ export default class Teleport {
 
   _render = () => { ReactDOM.render(<this.M />, this.m) }
 }
+
+export default new Teleport()
 
 export * from './components/Modal.js'
 export * from './components/Alert.js'
