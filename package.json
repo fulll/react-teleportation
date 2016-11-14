@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js",
     "build": "webpack",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "test": "eslint src"
   },
   "repository": {
     "url": "git@github.com:xeonys/react-teleportation.git",
