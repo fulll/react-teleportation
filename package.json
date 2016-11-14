@@ -1,6 +1,6 @@
 {
   "name": "react-teleportation",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Teleport your components outside of the actual context",
   "main": "./dist/react-teleportation.js",
   "scripts": {

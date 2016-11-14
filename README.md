@@ -8,7 +8,7 @@ Following the ***portal*** principle, [react-teleportation](#) create a new tree
 
 ```js
 import React from 'react'
-import Teleport, { Lightbox } from 'react-Teleportation'
+import Teleport, { Lightbox } from 'react-teleportation'
 
 const Home = () => {
   const openLightbox = () => Teleport.init(<Lightbox url="img/1.jpg" />)
