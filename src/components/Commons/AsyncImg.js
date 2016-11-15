@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const isImg = b => b.type.match(/image/) && { img: URL.createObjectURL(b) }
+const isImg = b => (b.type.match(/image/) ? { img: URL.createObjectURL(b) } : false)
 const getImg = url => fetch(url).then(r => r.blob())
 
 const Img = styled.img`
