@@ -28,3 +28,4 @@ export default new Teleport()
 export * from './components/Modal.js'
 export * from './components/Alert.js'
 export * from './components/Lightbox.js'
+export * from './components/Tutorial.js'

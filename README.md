@@ -54,6 +54,17 @@ const props = {
 </Modal>
 ```
 
+**Tutorial**
+
+```js
+<Tutorial>
+  {[
+    { id: 'componentId', text: 'Some information' },
+    { id: 'anotherComponentId', text: 'Some information' },
+  ]}
+</Tutorial>
+```
+
 We're actually working on Snackbar (Toast), tutorial, and routing for modal and lightbox
 
 ## Run and code
