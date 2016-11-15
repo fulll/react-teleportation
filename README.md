@@ -4,7 +4,7 @@
 
 ## Why ?
 
-Following the ***portal*** principle, [react-teleportation](#) create a new tree in the DOM to display some component in the foreground. It avoids headache with some z-Index weird tricks 😱 and can display your teleported component in full screen even if you run the modal from a component down in the tree.
+Following the ***portal*** principle, [react-teleportation](#) create a new tree in the DOM to display some component in the foreground. It avoids headache with some z-index weird tricks 😱 and can display your teleported component in full screen even if you run the modal from a component deep in the tree.
 
 ## Usage
 
