@@ -1,25 +1,5 @@
 import React from 'react'
-import { Background } from './Commons'
-
-const style = {
-  modal: {
-    position: 'fixed',
-    width: 200,
-    height: 70,
-    background: 'white',
-    padding: 20,
-    boxSizing: 'border-box',
-    fontFamily: 'sans-serif',
-  },
-  arrow: {
-    background: 'white',
-    width: 12,
-    height: 12,
-    position: 'absolute',
-    top: -6,
-    transform: 'rotate(45deg)',
-  },
-}
+import { Background, Tooltip } from './Commons'
 
 export class Tutorial extends React.Component {
   state = {
@@ -57,10 +37,9 @@ export class Tutorial extends React.Component {
 
   render = () => (
     <Background opacity={0.1} id={this.id} onClick={this.next}>
-      <div style={{ ...style.modal, ...this.state.position }}>
-        <div style={style.arrow} />
+      <Tooltip style={this.state.position}>
         {this.state.text}
-      </div>
+      </Tooltip>
     </Background>
   )
 }

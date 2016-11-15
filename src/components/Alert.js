@@ -1,9 +1,7 @@
 import React from 'react'
 import { capitalize as c } from 'lodash'
 import styled from 'styled-components'
-import { Background } from './Commons'
-
-const fontFamily = 'Noto, Roboto, sans-serif'
+import { Background, H1, P } from './Commons'
 
 const Modal = styled.div`
   display: table;
@@ -16,21 +14,6 @@ const Modal = styled.div`
   &:hover {
     box-shadow:  0 5px 20px rgba(0,0,0,0.15);
   }
-`
-
-const H1 = styled.h1`
-  font-size: 20px;
-  font-weight: 600;
-  padding: 24px 24px 0;
-  margin: 0;
-  font-family: ${fontFamily};
-`
-
-const P = styled.p`
-  font-size: 14px;
-  padding: 24px;
-  margin: 0;
-  font-family: ${fontFamily};
 `
 
 const Button = styled.button`

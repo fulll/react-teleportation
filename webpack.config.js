@@ -26,5 +26,6 @@ module.exports = {
     "react-dom": "react-dom",
     "lodash": "lodash",
     "styled-components": "styled-components",
+    "babel-polyfill": "babel-polyfill",
   }
 }

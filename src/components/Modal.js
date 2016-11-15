@@ -1,17 +1,16 @@
 import React from 'react'
-import { Background } from './Commons'
+import styled from 'styled-components'
+import { Background, fontFamily } from './Commons'
 
-const style = {
-  div: {
-    width: 500,
-    height: 300,
-    background: 'white',
-    margin: '20vh auto',
-    boxSizing: 'border-box',
-    padding: '20px',
-    fontFamily: 'Noto, Roboto, sans-serif',
-  },
-}
+const Div = styled.div`
+  width: 500px;
+  height: 300px;
+  background: white;
+  margin: 20vh auto;
+  box-sizing: border-box;
+  padding: 20px;
+  font-family: ${fontFamily};
+`
 
 export const Modal = ({ children, clear }) => {
   const id = 'modal'
@@ -19,9 +18,9 @@ export const Modal = ({ children, clear }) => {
 
   return (
     <Background opacity={0.1} id={id} onClick={close}>
-      <div style={style.div}>
+      <Div>
         {children}
-      </div>
+      </Div>
     </Background>
   )
 }

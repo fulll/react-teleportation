@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { defer, uniqueId } from 'lodash'
+import 'babel-polyfill'
 
 const style = {
   position: 'fixed',
