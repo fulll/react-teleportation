@@ -13,7 +13,6 @@ const style = {
 }
 
 class Teleport {
-
   i = uniqueId('teleport')
   m = document.body.appendChild(document.createElement('m'))
   M = () => <x style={style}>{React.cloneElement(this.el, { clear: this.clear })}</x>
